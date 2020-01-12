@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <nav class="navbar navbar-default static-top">
+        <div class="container">
+          <a href="index.html">
+            <img src="flare_logo.png" alt="Flare Logo" height=50px; class="logo"/>
+          </a>
+          <div class="col-8" style="text-align:right">
+            <img src="" alt="" />
+          </div>
+          <div class="col-2" id="user-align">
+            <p id="navbar-links">Contact Us</p>
+          </div>
+        </div>
+      </nav>
+    
+  
+    <!-- Navbar -->
+    <div class="container">
+      <div class="row">
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" id="index">Be Ready</a>
+          <a href="live-alerts.html" id="live-alerts">See Live Alerts</a>
+          <a href="play-game.html" id="play-game">Play the Game</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Make this page active -->
+    <script>
+      document.getElementById("live-alerts").className = "active";
+    </script>
+
+    <!-- Content -->
+    <div class="container">
+        <br>
+        <h1>Current updates for Sydney, Australia: </h1>
+    </div>
+
+    <div class="py-5">
+        <div class="container">
+            <div class="row hidden-md-up">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-block">
+                            <span style="font-weight: 700">Current Air Quality Index: </span>
+                            <span id="aqi"></span>
+                            <p style="font-style: italic" id="aqiDescript"></p>
+                            <span style="font-weight: 700">Datetime Retrieved: </span>
+                            <span id="datetime"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

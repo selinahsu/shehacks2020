@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <nav class="navbar navbar-default static-top">
+      <div class="container">
+        <a href="index.html">
+          <img src="flare_logo.png" alt="Flare Logo" height=50px; class="logo"/>
+        </a>
+        <div class="col-8" style="text-align:right">
+          <img src="" alt="" />
+        </div>
+        <div class="col-2" id="user-align">
+          <p id="navbar-links">Contact Us</p>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Navbar -->
+    <div class="container">
+      <div class="row">
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" id="index">Be Ready</a>
+          <a href="live-alerts.html" id="live-alerts">See Live Alerts</a>
+          <a href="play-game.html" id="play-game">Play the Game</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Make this page active -->
+    <script>
+      document.getElementById("index").className = "active";
+    </script>
+  
+  <body>
+    <div class="py-5">
+      <div class="container">
+        <div class="row hidden-md-up">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-block">
+                <h1>Sign up to receive SMS air quality and wildfire alerts in your area: </h1>
+                <br>
+                <form action="live-alerts.html">
+                    <div class="md-form">
+                        <label>Full Name</label>
+                        <br>
+                        <input type="text" name="full-name" id="txt-input"/>
+                        <br>
+                        <br>
+                        <label>Phone Number</label>
+                        <br>
+                        <input type="text" name="phone" id="txt-input"/>
+                        <br><br>
+                        <label>Email</label>
+                        <br>
+                        <input type="text" name="email" id="txt-input"/>
+                        <br>
+                        <br>
+                        <label>City</label>
+                        <br>
+                        <input type="text" name="city" id="txt-input"/>
+                        <br>
+                        <br>
+                        <label>Do you live less than 1km from a forested area?</label>
+                        <br>
+                        <select name="forest">
+                            <option value=""></option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                          </select>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">About Flare</h4>
+                <p class="card-text p-y-1">Some quick example text to build on the card title.</p>
+                <a href="#" class="card-link">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        </div>
+      </div>
+    </div>
+  </body>
+    
+</html>
+
+
+       
